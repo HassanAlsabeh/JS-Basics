@@ -5,8 +5,17 @@
   <title>Step 3</title>
 </head>
 <body>
+  <script>
+    function addText() {
+        document.getElementById('text').innerHTML = document.getElementById('name').value;
+      }
+  </script>
   <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"  onclick="addText()"/>
+  
   </form>
+<div id="text"></div>
+
+</div>
 </body>
 </html>
