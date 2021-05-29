@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Step 1</title>
+    <script src="Step_1.js"></script>
   </head>
   <body>
-      <img src="images/image1.jpg" id="image1" />
+    <script>
+      function changePic1() {
+          document.getElementById("myImg").src = "images/image1.jpg";
+        }
+        function changePic2() {
+          document.getElementById("myImg").src = "images/image1_2.jpg";
+        }
+    </script>
+      <img onmouseover="changePic1()" onmouseout="changePic2()" id="myImg" src="images/image1.jpg" width="150" height="200">
   </body>
 </html>
