@@ -5,8 +5,13 @@
   <title>Step 2</title>
 </head>
 <body>
+  <script>
+  function myFunction() {
+      alert("thank you for participating!");
+    }
+  </script>
   <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"  onfocusout="myFunction()"/>
   </form>
 </body>
 </html>
