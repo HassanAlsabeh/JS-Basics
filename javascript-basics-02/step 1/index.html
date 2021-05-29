@@ -7,13 +7,13 @@
   </head>
   <body>
     <script>
-      function changePic1() {
-          document.getElementById("myImg").src = "images/image1.jpg";
-        }
-        function changePic2() {
-          document.getElementById("myImg").src = "images/image1_2.jpg";
-        }
-    </script>
-      <img onmouseover="changePic1()" onmouseout="changePic2()" id="myImg" src="images/image1.jpg" width="150" height="200">
+       function myFunction() {
+         document.getElementById("image1").src="../step 1/images/image1_2.jpg"
+       }
+         function myFunction2() {
+            document.getElementById("image1").src = "../step 1/images/image1.jpg"
+          }
+      </script>
+      <img onmouseout="myFunction2()" src="images/image1.jpg" id="image1" onMouseOver="myFunction()"  />
   </body>
 </html>
